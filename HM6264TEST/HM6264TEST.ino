@@ -103,7 +103,7 @@ void setup() {
   pinMode(WE, OUTPUT);
   digitalWrite(WE, HIGH);
   for (int i=0; i<13; i++) pinMode(ADDR[i], OUTPUT); // address
-  for (int i=0; i<8; i++) pinMode(ADDR[i], INPUT);   // data
+  for (int i=0; i<8; i++) pinMode(DATA[i], INPUT);   // data
 
   Serial.println("HM6264 TEST PROGRAM");
   delay(10000);
