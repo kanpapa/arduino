@@ -4,30 +4,30 @@
 // 2019.01.13 @kanpapa
 //
 //                2364
-int D0=22;     // 9
-int D1=23;     // 10
-int D2=24;     // 11
-int D3=25;     // 13
-int D4=26;     // 14
-int D5=27;     // 15
-int D6=28;     // 16
-int D7=29;     // 17
+#define D0 22     // 9
+#define D1 23     // 10
+#define D2 24     // 11
+#define D3 25     // 13
+#define D4 26     // 14
+#define D5 27     // 15
+#define D6 28     // 16
+#define D7 29     // 17
 
-int AD0=30;    // 8
-int AD1=31;    // 7
-int AD2=32;    // 6
-int AD3=33;    // 5
-int AD4=34;    // 4
-int AD5=35;    // 3
-int AD6=36;    // 2
-int AD7=37;    // 1
-int AD8=38;    // 23
-int AD9=39;    // 22
-int AD10=40;   // 19
-int AD11=41;   // 18
-int AD12=42;   // 21
+#define AD0 30    // 8
+#define AD1 31    // 7
+#define AD2 32    // 6
+#define AD3 33    // 5
+#define AD4 34    // 4
+#define AD5 35    // 3
+#define AD6 36    // 2
+#define AD7 37    // 1
+#define AD8 38    // 23
+#define AD9 39    // 22
+#define AD10 40   // 19
+#define AD11 41   // 18
+#define AD12 42   // 21
 
-int CE=47;     // 20 Chip Enable
+#define CE 47  // 20 Chip Enable
                // 24 Vcc
                // 12 GND
 
