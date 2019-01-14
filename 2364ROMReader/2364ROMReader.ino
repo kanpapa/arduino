@@ -47,16 +47,17 @@ void setAddress(int addr) {
 
 byte memRead(int addr) {
   digitalWrite(CE, HIGH);  // CE = High
-  byte result = 0;
+  byte data = 0;
   setAddress(addr);
   digitalWrite(CE, LOW);  // CE = Low
   delayMicroseconds(1); // Wait 1micro sec
-  for (int i = 7; i >= 0; i--) {
-    result += result;
-    if (digitalRead(DATA[i]) == HIGH) result |= 1;
+  for (int bitno = 0; bitno < 8; bitno++) {
+    if (digitalRead(DATA[bitno]) == HIGH) {
+      bitSet(data, bitno);
+    }
   }
   digitalWrite(CE, HIGH);  // CE = High
-  return result;
+  return data;
 }
 
 void hexprint2(byte val){
